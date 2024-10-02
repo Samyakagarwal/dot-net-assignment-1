@@ -45,7 +45,7 @@ namespace Assignment_1
                 Sum = Sum + arr[i];
             }
             if (Sum >= 3000) {
-                Sum = (Sum * 10) / 100;
+                Sum = Sum - (Sum * 10) / 100;
             }
             Console.WriteLine(Sum);
         }
@@ -58,7 +58,7 @@ namespace Assignment_1
             If the input temperature is below 0°C, display a warning message about freezing temperatures.*/
 
             int c = Convert.ToInt32(Console.ReadLine());
-            if (c == 0)
+            if (c <= 0)
             {
                 Console.WriteLine("Warning Temp is Freezing");
             }
